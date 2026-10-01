@@ -1,0 +1,626 @@
+/* Orvexa 1.0.0 — Platform Visuals styles. */
+body[data-platform-page]{--p81-gap:24px;--p81-pad:24px;--p81-radius:16px}
+
+
+body[data-platform-page] .p7-panel.p7-table-panel{overflow:hidden}
+body[data-platform-page] .p7-panel.p7-table-panel>.p7-toolbar{
+  align-items:center;
+  padding:22px var(--p81-pad) 16px;
+  border-bottom:0;
+}
+body[data-platform-page] .p7-panel.p7-table-panel>.p7-toolbar .p7-section-head{margin:0}
+body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap{
+  width:auto;
+  margin:0 var(--p81-pad) var(--p81-pad);
+  overflow-x:auto;
+  overflow-y:visible;
+  border:1px solid color-mix(in srgb,var(--line) 88%,transparent);
+  border-radius:13px;
+  background:color-mix(in srgb,var(--surface-solid) 94%,transparent);
+}
+body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap .p7-table th{
+  padding:12px 14px;
+  background:color-mix(in srgb,var(--bg) 55%,var(--surface-solid));
+}
+body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap .p7-table td{padding:14px}
+
+
+body[data-platform-page] .p7-btn{border-radius:10px}
+body[data-platform-page] .p7-icon-btn{border-radius:9px}
+body[data-platform-page] .p7-status,
+body[data-platform-page] .p7-count{
+  min-width:0;
+  width:auto;
+  height:auto;
+  border-radius:8px;
+}
+
+
+body[data-platform-page="integrations"] .p7-topology{
+  min-height:410px;
+  margin-bottom:var(--p81-gap);
+  border-radius:18px;
+}
+body[data-platform-page="integrations"] .p7-topology-node{
+  width:220px;
+  padding:13px;
+  border-radius:13px;
+}
+body[data-platform-page="integrations"] .p7-topology-node.n1{left:4.5%;top:8%}
+body[data-platform-page="integrations"] .p7-topology-node.n2{left:2.5%;top:38%}
+body[data-platform-page="integrations"] .p7-topology-node.n3{left:5.5%;bottom:7%}
+body[data-platform-page="integrations"] .p7-topology-node.n4{right:4.5%;top:8%}
+body[data-platform-page="integrations"] .p7-topology-node.n5{right:2.5%;top:38%}
+body[data-platform-page="integrations"] .p7-topology-node.n6{right:5.5%;bottom:7%}
+body[data-platform-page="integrations"] .p7-integration-contracts{margin-bottom:var(--p81-gap)}
+body[data-platform-page="integrations"] .p7-integration-contracts>.p7-section-head{margin:0 0 16px}
+body[data-platform-page="integrations"] .p7-integration-grid{gap:16px}
+body[data-platform-page="integrations"] .p7-integration-grid>a{
+  min-height:220px;
+  padding:20px;
+  border-radius:15px;
+}
+body[data-platform-page="integrations"] .p7-integration-grid dl{margin-top:16px}
+body[data-platform-page="integrations"] .p7-integration-grid dl div{padding:10px 12px}
+body[data-platform-page="integrations"] .p7-webhook-table{margin-top:0}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table{min-width:920px}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(1){width:23%}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(2){width:20%}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(3){width:13%}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(4),
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(5),
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(6){width:10%}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(7){width:14%}
+
+
+body[data-platform-page="data-privacy"] .p7-privacy-layout{
+  grid-template-columns:minmax(0,1fr) 370px;
+  align-items:start;
+  gap:var(--p81-gap);
+  margin-top:var(--p81-gap);
+}
+body[data-platform-page="data-privacy"] .p7-privacy-layout>.p7-panel,
+body[data-platform-page="data-privacy"] .p7-residency{min-width:0}
+body[data-platform-page="data-privacy"] .p7-privacy-table{margin-left:var(--p81-pad);margin-right:var(--p81-pad)}
+body[data-platform-page="data-privacy"] .p7-privacy-table .p7-table{
+  min-width:0;
+  table-layout:fixed;
+}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(1){width:24%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(2){width:15%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(3){width:23%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(4){width:17%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(5){width:15%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(6){width:54px}
+body[data-platform-page="data-privacy"] .p7-privacy-table td{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+body[data-platform-page="data-privacy"] .p7-privacy-table td:nth-child(5){white-space:nowrap}
+body[data-platform-page="data-privacy"] .p7-privacy-table td:last-child,
+body[data-platform-page="data-privacy"] .p7-privacy-table th:last-child{text-align:center}
+body[data-platform-page="data-privacy"] .p7-residency{
+  padding:24px;
+  border-radius:18px;
+}
+body[data-platform-page="data-privacy"] .p7-residency>p{max-width:320px;line-height:1.58}
+body[data-platform-page="data-privacy"] .p7-region-map{min-height:245px;margin-top:18px}
+body[data-platform-page="data-privacy"] .p7-region-legend{gap:10px;margin-top:18px}
+body[data-platform-page="data-privacy"] .p7-region-legend>span{gap:12px;align-items:center}
+body[data-platform-page="data-privacy"] .p7-region-legend .p7-status{flex:0 0 auto}
+
+
+body[data-platform-page="secrets-credentials"] .p7-vault{margin-bottom:var(--p81-gap)}
+body[data-platform-page="secrets-credentials"] .p7-panel.p7-table-panel{margin-top:0}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table .p7-table{min-width:1060px}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(1){width:24%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(2){width:14%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(3){width:13%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(4){width:11%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(5){width:8%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(6){width:12%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(7){width:9%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(8){width:11%}
+body[data-platform-page="secrets-credentials"] .p7-binding-grid{margin-top:0}
+
+
+body[data-platform-page="security-sessions"] .p7-security-layout{
+  grid-template-columns:minmax(0,1.55fr) minmax(380px,.65fr);
+  align-items:start;
+  gap:var(--p81-gap);
+}
+body[data-platform-page="security-sessions"] .p7-session-table .p7-table{
+  min-width:0;
+  table-layout:fixed;
+}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(1){width:28%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(2){width:19%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(3){width:16%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(4){width:15%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(5){width:14%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(6){width:88px}
+body[data-platform-page="security-sessions"] .p7-session-table td:last-child,
+body[data-platform-page="security-sessions"] .p7-session-table th:last-child{text-align:right}
+body[data-platform-page="security-sessions"] .p7-auth-events{
+  padding:24px;
+  border-radius:18px;
+}
+body[data-platform-page="security-sessions"] .p7-auth-events>div>button{
+  grid-template-columns:8px minmax(0,1fr) max-content;
+  align-items:center;
+  gap:12px;
+  padding:17px 0;
+}
+body[data-platform-page="security-sessions"] .p7-auth-events .p7-status{
+  min-height:28px;
+  min-width:64px;
+  justify-content:center;
+  padding:6px 9px;
+  border-radius:8px;
+}
+body[data-platform-page="security-sessions"] .p7-auth-events .p7-status i{width:6px;height:6px}
+body[data-platform-page="security-sessions"] .p7-auth-events b{font-size:14px}
+body[data-platform-page="security-sessions"] .p7-auth-events p,
+body[data-platform-page="security-sessions"] .p7-auth-events small{font-size:12.5px}
+
+
+body[data-platform-page="roles-audit"] .p7-role-grid{
+  grid-template-columns:repeat(6,minmax(0,1fr));
+  gap:14px;
+  margin-bottom:var(--p81-gap);
+}
+body[data-platform-page="roles-audit"] .p7-role-grid>button{
+  min-height:188px;
+  padding:20px;
+  border-radius:15px;
+}
+body[data-platform-page="roles-audit"] .p7-role-grid h3{margin-top:20px;font-size:14px}
+body[data-platform-page="roles-audit"] .p7-role-grid p{font-size:12.5px!important;line-height:1.52!important}
+body[data-platform-page="roles-audit"] .p7-role-grid footer{margin-top:14px;font-size:12px}
+body[data-platform-page="roles-audit"] .p7-permission-panel{margin-top:0;padding:0;overflow:hidden}
+body[data-platform-page="roles-audit"] .p7-permission-panel>.p7-section-head{margin:0;padding:22px 24px 16px}
+body[data-platform-page="roles-audit"] .p7-permission-panel>.p7-table-wrap{
+  width:auto;
+  margin:0 24px 24px;
+  border:1px solid color-mix(in srgb,var(--line) 88%,transparent);
+  border-radius:13px;
+  overflow-x:auto;
+}
+body[data-platform-page="roles-audit"] .p7-permission-table .p7-table{
+  min-width:1050px;
+  table-layout:fixed;
+}
+body[data-platform-page="roles-audit"] .p7-permission-table th:first-child,
+body[data-platform-page="roles-audit"] .p7-permission-table td:first-child{width:19%;padding-left:18px}
+body[data-platform-page="roles-audit"] .p7-permission-table th:not(:first-child),
+body[data-platform-page="roles-audit"] .p7-permission-table td:not(:first-child){width:13.5%;padding-left:12px;padding-right:12px;text-align:center}
+body[data-platform-page="roles-audit"] .p7-permission{
+  min-width:64px;
+  padding:6px 9px;
+  border-radius:8px;
+}
+body[data-platform-page="roles-audit"] .p7-audit-layout{gap:var(--p81-gap);margin-top:var(--p81-gap)}
+
+
+@media(max-width:1320px){
+  body[data-platform-page="data-privacy"] .p7-privacy-layout,
+  body[data-platform-page="security-sessions"] .p7-security-layout{grid-template-columns:1fr}
+  body[data-platform-page="data-privacy"] .p7-residency>p{max-width:none}
+  body[data-platform-page="roles-audit"] .p7-role-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:900px){
+  body[data-platform-page]{--p81-pad:18px}
+  body[data-platform-page="integrations"] .p7-topology{min-height:auto}
+  body[data-platform-page="integrations"] .p7-integration-grid{grid-template-columns:1fr}
+  body[data-platform-page="roles-audit"] .p7-role-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:640px){
+  body[data-platform-page]{--p81-pad:14px}
+  body[data-platform-page] .p7-panel.p7-table-panel>.p7-toolbar{padding:18px 14px 12px}
+  body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap{margin:0 14px 14px}
+  body[data-platform-page="roles-audit"] .p7-role-grid{grid-template-columns:1fr}
+  body[data-platform-page="roles-audit"] .p7-permission-panel>.p7-section-head{padding:18px 14px 12px}
+  body[data-platform-page="roles-audit"] .p7-permission-panel>.p7-table-wrap{margin:0 14px 14px}
+}
+
+
+body[data-platform-page="security-sessions"] .p7-security-layout{
+  grid-template-columns:minmax(0,1fr) 380px;
+}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(1){width:27%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(2){width:18%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(3){width:15%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(4){width:14%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(5){width:17%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(6){width:9%}
+body[data-platform-page="workspaces-tenants"] .p7-posture>.p7-section-head{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto;
+  align-items:start;
+  column-gap:10px;
+}
+body[data-platform-page="workspaces-tenants"] .p7-posture>.p7-section-head>div{min-width:0}
+body[data-platform-page="workspaces-tenants"] .p7-posture>.p7-section-head>strong{
+  min-width:62px;
+  text-align:right;
+  white-space:nowrap;
+}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(1){width:26%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(2){width:17%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(3){width:15%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(4){width:14%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(5){width:19%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(6){width:9%}
+
+
+body[data-platform-page="api-access"] .p7-sealed{margin-bottom:24px}
+body[data-platform-page="api-access"] .p7-service-grid{margin-top:24px}
+body[data-platform-page="data-privacy"] .p7-policy-context{margin-bottom:24px}
+body[data-platform-page="data-privacy"] .p7-template-notice{margin-bottom:24px}
+body[data-platform-page="data-privacy"] .p7-redaction-grid{margin-top:24px}
+body[data-platform-page="roles-audit"] .pf-tabs{margin-bottom:24px}
+body[data-platform-page="roles-audit"] .pf-sod-warning{margin-bottom:24px}
+body[data-platform-page="secrets-credentials"] .p7-binding-grid{margin-top:24px}
+body[data-platform-page="workspace-detail"] .p7-context-panel{margin-top:24px}
+body[data-platform-page="workspaces-tenants"] .pf-filterbar{margin-top:24px;margin-bottom:24px}
+body[data-platform-page$="-detail"] main>.p7-workspace-detail-grid+.p7-workspace-detail-grid{margin-top:24px}
+
+
+
+
+
+body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap{
+  width:100%;
+  margin:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:0;
+  border-radius:0 0 16px 16px;
+  background:transparent;
+}
+body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap .p7-table{
+  width:100%;
+  max-width:none;
+}
+body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap .p7-table th:first-child,
+body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap .p7-table td:first-child{padding-left:24px}
+body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap .p7-table th:last-child,
+body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap .p7-table td:last-child{padding-right:24px}
+
+
+body[data-platform-page="roles-audit"] .p7-permission-panel>.p7-table-wrap{
+  width:100%;
+  margin:0;
+  border-left:0;
+  border-right:0;
+  border-bottom:0;
+  border-radius:0 0 16px 16px;
+  background:transparent;
+}
+body[data-platform-page="roles-audit"] .p7-permission-table .p7-table{
+  width:100%;
+  min-width:0;
+  table-layout:fixed;
+}
+body[data-platform-page="roles-audit"] .p7-permission-table th:first-child,
+body[data-platform-page="roles-audit"] .p7-permission-table td:first-child{width:18%;padding-left:24px}
+body[data-platform-page="roles-audit"] .p7-permission-table th:not(:first-child),
+body[data-platform-page="roles-audit"] .p7-permission-table td:not(:first-child){width:13.666%;padding-left:10px;padding-right:10px}
+body[data-platform-page="roles-audit"] .p7-permission-table th:last-child,
+body[data-platform-page="roles-audit"] .p7-permission-table td:last-child{padding-right:24px}
+
+
+body[data-platform-page="security-sessions"] .p7-security-layout{
+  grid-template-columns:minmax(0,1fr) 340px;
+  gap:24px;
+}
+body[data-platform-page="security-sessions"] .p7-session-table .p7-table{width:100%;min-width:0;table-layout:fixed}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(1){width:27%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(2){width:18%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(3){width:16%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(4){width:14%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(5){width:16%}
+body[data-platform-page="security-sessions"] .p7-session-table th:nth-child(6){width:9%}
+
+
+body[data-platform-page="secrets-credentials"] .p7-secrets-table .p7-table{width:100%;min-width:0;table-layout:fixed}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(1){width:23%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(2){width:14%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(3){width:13%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(4){width:11%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(5){width:7%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(6){width:12%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(7){width:10%}
+body[data-platform-page="secrets-credentials"] .p7-secrets-table th:nth-child(8){width:10%}
+
+
+body[data-platform-page="data-privacy"] .p7-privacy-layout{
+  grid-template-columns:minmax(0,1fr) 340px;
+  gap:24px;
+}
+body[data-platform-page="data-privacy"] .p7-privacy-table{margin:0}
+body[data-platform-page="data-privacy"] .p7-privacy-table .p7-table{width:100%;min-width:0;table-layout:fixed}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(1){width:25%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(2){width:15%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(3){width:22%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(4){width:17%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(5){width:13%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(6){width:8%}
+body[data-platform-page="data-privacy"] .p7-table-action{
+  display:inline-flex;
+  min-height:32px;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  padding:6px 9px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:color-mix(in srgb,var(--surface-solid) 92%,transparent);
+  color:var(--text);
+  font-size:12px;
+  font-weight:800;
+  white-space:nowrap;
+}
+body[data-platform-page="data-privacy"] .p7-table-action svg{width:13px}
+
+
+@media(min-width:1181px){
+  body[data-platform-page="integrations"] .p7-topology{
+    min-height:470px;
+    margin-bottom:24px;
+  }
+  body[data-platform-page="integrations"] .p7-topology-core{
+    width:142px;
+    height:142px;
+  }
+  body[data-platform-page="integrations"] .p7-topology-node{
+    width:232px;
+    min-height:104px;
+    padding:14px;
+    transform:none;
+  }
+  body[data-platform-page="integrations"] .p7-topology-node.n1{left:34px;top:28px}
+  body[data-platform-page="integrations"] .p7-topology-node.n2{left:34px;top:50%;transform:translateY(-50%)}
+  body[data-platform-page="integrations"] .p7-topology-node.n3{left:34px;top:auto;bottom:28px}
+  body[data-platform-page="integrations"] .p7-topology-node.n4{right:34px;top:28px}
+  body[data-platform-page="integrations"] .p7-topology-node.n5{right:34px;top:50%;transform:translateY(-50%)}
+  body[data-platform-page="integrations"] .p7-topology-node.n6{right:34px;top:auto;bottom:28px}
+}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table{width:100%;min-width:0;table-layout:fixed}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(1){width:23%}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(2){width:20%}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(3){width:14%}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(4){width:10%}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(5){width:9%}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(6){width:10%}
+body[data-platform-page="integrations"] .p7-webhook-table .p7-table th:nth-child(7){width:14%}
+
+@media(max-width:1180px){
+  body[data-platform-page="roles-audit"] .p7-permission-table .p7-table{min-width:980px}
+  body[data-platform-page="secrets-credentials"] .p7-secrets-table .p7-table{min-width:980px}
+  body[data-platform-page="integrations"] .p7-webhook-table .p7-table{min-width:840px}
+  body[data-platform-page="data-privacy"] .p7-privacy-table .p7-table{min-width:760px}
+  body[data-platform-page="security-sessions"] .p7-session-table .p7-table{min-width:820px}
+}
+@media(max-width:640px){
+  body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap .p7-table th:first-child,
+  body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap .p7-table td:first-child,
+  body[data-platform-page="roles-audit"] .p7-permission-table th:first-child,
+  body[data-platform-page="roles-audit"] .p7-permission-table td:first-child{padding-left:14px}
+  body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap .p7-table th:last-child,
+  body[data-platform-page] .p7-panel.p7-table-panel>.p7-table-wrap .p7-table td:last-child,
+  body[data-platform-page="roles-audit"] .p7-permission-table th:last-child,
+  body[data-platform-page="roles-audit"] .p7-permission-table td:last-child{padding-right:14px}
+}
+
+
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(1){width:24%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(2){width:14%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(3){width:21%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(4){width:16%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(5){width:15%}
+body[data-platform-page="data-privacy"] .p7-privacy-table th:nth-child(6){width:10%}
+body[data-platform-page="data-privacy"] .p7-table-action{min-width:62px}
+body[data-platform-page="roles-audit"] .p7-role-grid header>span{font-size:12px}
+
+
+body[data-platform-page] .p7-table-wrap{overflow-x:auto;overflow-y:hidden}
+body[data-platform-page] .p7-table-wrap{scrollbar-gutter:auto!important}
+
+
+body[data-platform-page="integrations"] .p7-topology{
+  display:grid;
+  grid-template-columns:minmax(250px,300px) minmax(260px,1fr) minmax(250px,300px);
+  align-items:center;
+  gap:44px;
+  min-height:0;
+  padding:28px 30px;
+  margin-bottom:24px;
+  border-radius:20px;
+  background:
+    radial-gradient(circle at 50% 50%,color-mix(in srgb,var(--primary-2) 8%,transparent),transparent 30%),
+    linear-gradient(color-mix(in srgb,var(--surface-solid) 96%,transparent),color-mix(in srgb,var(--surface-solid) 91%,transparent));
+  isolation:isolate;
+}
+body[data-platform-page="integrations"] .p7-topology:before{
+  opacity:.55;
+  background-size:28px 28px;
+  mask-image:linear-gradient(90deg,transparent 0,black 16%,black 84%,transparent 100%);
+}
+body[data-platform-page="integrations"] .p7-topology-rail{
+  position:relative;
+  z-index:3;
+  display:grid;
+  gap:12px;
+}
+body[data-platform-page="integrations"] .p7-topology-center{
+  position:relative;
+  z-index:3;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:308px;
+}
+body[data-platform-page="integrations"] .p7-topology-core{
+  position:relative;
+  inset:auto;
+  width:min(100%,230px);
+  height:auto;
+  min-height:150px;
+  transform:none;
+  padding:22px 18px;
+  border-radius:26px;
+  background:linear-gradient(145deg,color-mix(in srgb,var(--surface-solid) 99%,transparent),color-mix(in srgb,var(--primary-2) 4%,var(--surface-solid)));
+  box-shadow:0 18px 48px color-mix(in srgb,var(--text) 8%,transparent),0 0 0 10px color-mix(in srgb,var(--primary-2) 4%,transparent);
+  text-align:center;
+}
+body[data-platform-page="integrations"] .p7-topology-core>span{
+  width:46px;
+  height:46px;
+  border-radius:14px;
+}
+body[data-platform-page="integrations"] .p7-topology-core b{
+  margin-top:10px;
+  font-size:15px;
+  line-height:1.25;
+}
+body[data-platform-page="integrations"] .p7-topology-core small{
+  margin-top:5px;
+  font-size:12px;
+  line-height:1.45;
+}
+body[data-platform-page="integrations"] .p7-topology-core-meta{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:6px;
+  margin-top:13px;
+}
+body[data-platform-page="integrations"] .p7-topology-core-meta i{
+  display:inline-flex;
+  min-height:25px;
+  align-items:center;
+  padding:4px 8px;
+  border:1px solid color-mix(in srgb,var(--primary-2) 20%,var(--line));
+  border-radius:8px;
+  background:color-mix(in srgb,var(--primary-2) 6%,var(--surface-solid));
+  color:color-mix(in srgb,var(--text) 82%,var(--primary-2));
+  font-size:11px;
+  font-style:normal;
+  font-weight:750;
+}
+body[data-platform-page="integrations"] .p7-topology-node,
+body[data-platform-page="integrations"] .p7-topology-node.n1,
+body[data-platform-page="integrations"] .p7-topology-node.n2,
+body[data-platform-page="integrations"] .p7-topology-node.n3,
+body[data-platform-page="integrations"] .p7-topology-node.n4,
+body[data-platform-page="integrations"] .p7-topology-node.n5,
+body[data-platform-page="integrations"] .p7-topology-node.n6{
+  position:relative;
+  inset:auto;
+  width:100%;
+  min-height:90px;
+  transform:none;
+  grid-template-columns:40px minmax(0,1fr) auto;
+  gap:10px;
+  padding:13px 14px;
+  border-radius:15px;
+  box-shadow:0 8px 24px color-mix(in srgb,var(--text) 6%,transparent);
+}
+body[data-platform-page="integrations"] .p7-topology-node>span{
+  width:40px;
+  height:40px;
+  border-radius:11px;
+}
+body[data-platform-page="integrations"] .p7-topology-node b{font-size:13px;line-height:1.25}
+body[data-platform-page="integrations"] .p7-topology-node small{font-size:11.5px;line-height:1.35}
+body[data-platform-page="integrations"] .p7-topology-node em{font-size:11.5px;line-height:1.3}
+body[data-platform-page="integrations"] .p7-topology-node .p7-status{
+  grid-column:3;
+  grid-row:1;
+  align-self:start;
+  justify-self:end;
+  margin:0;
+}
+body[data-platform-page="integrations"] .p7-topology-links{
+  position:absolute;
+  z-index:1;
+  inset:28px 30px;
+  width:calc(100% - 60px);
+  height:calc(100% - 56px);
+  pointer-events:none;
+}
+body[data-platform-page="integrations"] .p7-topology-links path{
+  fill:none;
+  stroke:color-mix(in srgb,var(--primary-2) 42%,transparent);
+  stroke-width:1.4;
+  stroke-dasharray:5 7;
+  marker-end:url(#p7-flow-arrow);
+}
+body[data-platform-page="integrations"] .p7-topology-links marker path{
+  fill:color-mix(in srgb,var(--primary-2) 62%,transparent);
+  stroke:none;
+}
+@media(max-width:1180px){
+  body[data-platform-page="integrations"] .p7-topology{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    padding:18px;
+  }
+  body[data-platform-page="integrations"] .p7-topology-center{
+    grid-column:1/-1;
+    grid-row:1;
+    min-height:0;
+    margin-bottom:4px;
+  }
+  body[data-platform-page="integrations"] .p7-topology-core{width:min(100%,320px)}
+  body[data-platform-page="integrations"] .p7-topology-rail{gap:10px}
+  body[data-platform-page="integrations"] .p7-topology-node{display:grid;width:100%;margin:0}
+  body[data-platform-page="integrations"] .p7-topology-links{display:none}
+}
+@media(max-width:700px){
+  body[data-platform-page="integrations"] .p7-topology{grid-template-columns:1fr;padding:14px}
+  body[data-platform-page="integrations"] .p7-topology-center,
+  body[data-platform-page="integrations"] .p7-topology-rail{grid-column:1}
+  body[data-platform-page="integrations"] .p7-topology-center{grid-row:auto}
+  body[data-platform-page="integrations"] .p7-topology-node{grid-template-columns:40px minmax(0,1fr) auto}
+}
+
+
+body[data-platform-page="integrations"] .p7-topology-node{
+  grid-template-columns:40px minmax(0,1fr) auto;
+  column-gap:12px;
+  padding:14px 16px;
+}
+body[data-platform-page="integrations"] .p7-topology-node .p7-status{
+  grid-column:3;
+  grid-row:1;
+  align-self:center;
+  justify-self:end;
+  min-height:24px!important;
+  height:24px;
+  padding:0 8px!important;
+  gap:0;
+  border-radius:8px!important;
+  font-size:12px!important;
+  line-height:1!important;
+  font-weight:750!important;
+  letter-spacing:0;
+  box-shadow:none!important;
+}
+body[data-platform-page="integrations"] .p7-topology-node .p7-status i{
+  display:none!important;
+}
+body[data-platform-page="integrations"] .p7-topology-node .p7-status.is-good{
+  background:color-mix(in srgb,var(--mint) 7%,var(--surface-solid));
+  border-color:color-mix(in srgb,var(--mint) 28%,var(--line));
+}
+body[data-platform-page="integrations"] .p7-topology-node .p7-status.is-warn{
+  background:color-mix(in srgb,var(--primary-2) 8%,var(--surface-solid));
+  border-color:color-mix(in srgb,var(--primary-2) 30%,var(--line));
+}
+@media(max-width:700px){
+  body[data-platform-page="integrations"] .p7-topology-node{padding:13px 14px}
+  body[data-platform-page="integrations"] .p7-topology-node .p7-status{min-height:23px!important;height:23px;padding:0 7px!important}
+}

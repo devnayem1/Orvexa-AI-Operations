@@ -1,0 +1,434 @@
+/* Orvexa 1.0.0 — Global Visuals styles. */
+body[data-app-shell="true"] main{
+  --premium-section-gap:24px;
+  --premium-panel-pad:24px;
+  --premium-panel-pad-compact:20px;
+  --premium-row-pad-y:14px;
+  --premium-row-pad-x:20px;
+  --premium-body-font:14px;
+  --premium-meta-font:12.5px;
+  --premium-control-font:13.5px;
+  --premium-section-title:17px;
+}
+
+
+body[data-app-shell="true"] main :is(
+  .p2-head-copy h1,.p3-head h1,.p4-head h1,.p5-head h1,.p6-title h1,.p7-head h1,.p8-head h1,
+  .cp-page-title,.rt-title,.pa-head h1,.ux-title,.fabric-head h1,.tc-head h1,.dk-head h1
+){
+  font-size:clamp(30px,2vw,34px)!important;
+  line-height:1.12!important;
+  letter-spacing:-.04em!important;
+  font-weight:800!important;
+}
+body[data-app-shell="true"] main :is(
+  .p2-head-copy p,.p3-head p,.p4-head p,.p5-head p,.p6-title p,.p7-head p,.p8-head p,
+  .cp-page-copy,.rt-copy,.pa-head p,.ux-copy,.fabric-head p,.tc-head p,.dk-head p
+){
+  max-width:880px;
+  margin-top:7px!important;
+  font-size:14.5px!important;
+  line-height:1.58!important;
+  color:color-mix(in srgb,var(--muted) 94%,var(--text) 6%)!important;
+}
+body[data-app-shell="true"] main :is(
+  .p2-eyebrow,.p3-eyebrow,.p4-eyebrow,.p5-eyebrow,.p6-eyebrow,.p7-eyebrow,.p8-eyebrow,
+  .cp-eyebrow,.rt-eyebrow,.pa-eyebrow,.ux-kicker,.customer-detail-eyebrow,[class*="kicker"]
+){font-size:11.5px!important;line-height:1.35!important;letter-spacing:.1em!important}
+
+
+body[data-app-shell="true"] main :is(
+  .p2-panel-head p,.p3-panel-head p,.p4-panel-head p,.p5-panel-head p,.p6-panel-head p,.p7-section-head p,.p8-panel-head p,
+  .fabric-section-head p,.cp-panel-head p,.rt-panel-head p,.ux-panel-head p
+){font-size:13px!important;line-height:1.52!important;color:color-mix(in srgb,var(--muted) 95%,var(--text) 5%)!important}
+
+body[data-app-shell="true"] main :is(
+  .p2-panel-head h2,.p3-panel-head h2,.p4-panel-head h2,.p5-panel-head h2,.p6-panel-head h2,.p7-section-head h2,.p8-panel-head h2,
+  .fabric-section-head h2,.cp-panel-head h2,.rt-panel-head h2,.ux-panel-head h2
+){font-size:var(--premium-section-title)!important;line-height:1.28!important;font-weight:800!important;letter-spacing:-.015em!important}
+
+
+body[data-app-shell="true"] main :is(.p2-head,.p3-head,.p4-head,.p5-head,.p6-head,.p7-head,.p8-head,.cp-page-head,.rt-page-head,.pa-head,.ux-head,.fabric-head){
+  gap:22px!important;
+  margin-bottom:24px!important;
+}
+body[data-app-shell="true"] main :is(.p2-section,.p3-section,.p4-section,.p5-section,.p6-section){margin-top:24px!important}
+body[data-app-shell="true"] main :is(.p2-grid,.p3-grid,.p4-grid,.p5-grid,.p6-grid,.p7-grid,.ux-grid,.cp-grid,.rt-grid,.fabric-grid){gap:18px!important}
+
+
+body[data-app-shell="true"]:not([data-platform-page]) main :is(
+  .p2-panel-head,.p3-panel-head,.p4-panel-head,.p5-panel-head,.p6-panel-head,.p8-panel-head,
+  .cp-panel-head,.rt-panel-head,.ux-panel-head,.fabric-section-head
+){padding:20px var(--premium-panel-pad)!important;gap:16px!important}
+body[data-app-shell="true"]:not([data-platform-page]) main :is(
+  .p2-panel-body,.p3-panel-body,.p4-panel-body,.p5-panel-body,.p6-panel-body,.p8-panel-body,
+  .cp-panel-body,.rt-panel-body,.ux-panel-body,.fabric-pad
+){padding:var(--premium-panel-pad)!important}
+
+body[data-app-shell="true"] main :is(.p2-panel,.p3-panel,.p4-panel,.p5-panel,.p6-panel,.p7-panel,.p8-panel,.cp-panel,.rt-panel,.ux-panel,.fabric-panel){
+  border-radius:18px!important;
+}
+
+
+body[data-app-shell="true"]:not([data-platform-page]) main :is(.p2-metric,.p3-metric,.p4-metric,.p5-metric,.p6-metric,.p8-metric){
+  padding:19px 20px!important;
+}
+body[data-app-shell="true"] main :is(.p2-metric small,.p3-metric small,.p4-metric small,.p5-metric small,.p6-metric small,.p8-metric small){font-size:12.5px!important;line-height:1.35!important}
+body[data-app-shell="true"] main :is(.p2-metric strong,.p3-metric strong,.p4-metric strong,.p5-metric strong,.p6-metric strong,.p8-metric strong){font-size:27px!important;line-height:1.06!important}
+body[data-app-shell="true"] main :is(.p2-metric p,.p3-metric p,.p4-metric p,.p5-metric p,.p6-metric p,.p8-metric p,.p2-metric em,.p3-metric em,.p4-metric em,.p5-metric em,.p6-metric em){font-size:12.25px!important;line-height:1.42!important}
+
+
+body[data-app-shell="true"] main :is(
+  .p2-btn,.p2-select,.p3-btn,.p3-select,.p4-btn,.p4-select,.p5-btn,.p5-select,.p6-btn,.p6-select,.p7-btn,.p8-btn,
+  .cp-btn,.rt-btn,.pa-btn,.ux-btn,.btn-primary,.btn-secondary
+){min-height:40px!important;padding-block:8px!important;font-size:var(--premium-control-font)!important;line-height:1.2!important}
+body[data-app-shell="true"] main :is(input,select,textarea){font-size:13px}
+body[data-app-shell="true"] main :is(.p8-field>span,.p8-setting-list b,.p8-routing-grid b,.p8-switch-row b){font-size:12.5px!important;line-height:1.4!important}
+body[data-app-shell="true"] main :is(.p8-field>small,.p8-field>em,.p8-setting-list p,.p8-routing-grid p,.p8-switch-row small,.p8-account-evidence dt,.p8-account-evidence dd){font-size:12px!important;line-height:1.45!important}
+body[data-app-shell="true"] main :is(.p8-field input,.p8-field select,.p8-field textarea,.p8-setting-list select,.p8-routing-grid select){font-size:13px!important}
+
+
+body[data-app-shell="true"] main :is(
+  .p2-table-head,.p3-table-head,.p4-table-head,.p5-table-head,.p6-table-head,
+  .cp-table th,.rt-table th,.kc-table th,.qg-table th,.of-table th,.pa-table th,.ux-table th,.p7-table th,.p8-table th,
+  table th
+){font-size:12px!important;line-height:1.35!important;letter-spacing:.035em!important}
+body[data-app-shell="true"] main :is(
+  .p2-row,.p3-row,.p4-row,.p5-row,.p6-row,
+  .cp-table td,.rt-table td,.kc-table td,.qg-table td,.of-table td,.pa-table td,.ux-table td,.p7-table td,.p8-table td,
+  table td
+){font-size:14px!important;line-height:1.46!important}
+body[data-app-shell="true"]:not([data-platform-page]) main :is(.p2-table-head,.p3-table-head,.p4-table-head,.p5-table-head,.p6-table-head){padding:12px var(--premium-row-pad-x)!important}
+body[data-app-shell="true"]:not([data-platform-page]) main :is(.p2-row,.p3-row,.p4-row,.p5-row,.p6-row){
+  min-height:60px!important;
+  padding:var(--premium-row-pad-y) var(--premium-row-pad-x)!important;
+}
+body[data-app-shell="true"] main :is(.p2-row small,.p3-row small,.p4-row small,.p5-row small,.p6-row small,table td small){font-size:12px!important;line-height:1.4!important}
+
+
+body[data-app-shell="true"] main :is(.p2-table,.p3-table,.p4-table,.p5-table,.p6-table,.cp-table-wrap,.rt-table-wrap,.ux-table-wrap,[class*="table-wrap"]){
+  max-height:none!important;
+  overflow-y:visible!important;
+}
+body[data-app-shell="true"] main :is(.p2-table,.p3-table,.p4-table,.p5-table,.p6-table,.cp-table-wrap,.rt-table-wrap,.ux-table-wrap,[class*="table-wrap"]){overflow-x:auto!important}
+
+
+body[data-app-shell="true"] main :is(.p2-tabs,.rt-tabs,.fabric-tabs,.dk-tabs,.m10-tabs,.live-ops-tabs,.tc-inspector-tabs,.tc-mode-tabs,.p3-editor-tabs){
+  display:flex;
+  gap:5px!important;
+  width:max-content;
+  max-width:100%;
+  margin-bottom:20px!important;
+  padding:5px!important;
+  overflow-x:auto;
+  border:1px solid color-mix(in srgb,var(--line) 82%,transparent)!important;
+  border-radius:14px!important;
+  background:color-mix(in srgb,var(--surface-solid) 84%,transparent)!important;
+  box-shadow:0 8px 24px rgba(4,8,12,.035);
+  scrollbar-width:none;
+}
+body[data-app-shell="true"] main :is(.p2-tabs,.rt-tabs,.fabric-tabs,.dk-tabs,.m10-tabs,.live-ops-tabs,.tc-inspector-tabs,.tc-mode-tabs,.p3-editor-tabs)::-webkit-scrollbar{display:none}
+body[data-app-shell="true"] main :is(
+  .p2-tab,.rt-tab,.fabric-tab,.dk-tab,.m10-tab,.live-ops-tab,.tc-inspector-tab,.tc-mode-tab,.p3-editor-tab,
+  .p2-tabs>a,.rt-tabs>a,.fabric-tabs>a,.dk-tabs>a,.m10-tabs>a,.live-ops-tabs>a,.tc-inspector-tabs>button,.tc-mode-tabs>button,.p3-editor-tabs>button
+){
+  min-height:38px!important;
+  padding:8px 12px!important;
+  border:0!important;
+  border-radius:10px!important;
+  background:transparent!important;
+  color:var(--muted)!important;
+  font-size:12.75px!important;
+  font-weight:750!important;
+  line-height:1.2!important;
+  white-space:nowrap;
+}
+body[data-app-shell="true"] main :is(
+  .p2-tab.active,.p2-tab.is-active,.rt-tab.active,.rt-tab.is-active,.fabric-tab.active,.fabric-tab.is-active,.dk-tab.active,.dk-tab.is-active,
+  .m10-tab.active,.m10-tab.is-active,.live-ops-tab.active,.live-ops-tab.is-active,.tc-inspector-tab.active,.tc-inspector-tab.is-active,
+  .tc-mode-tab.active,.tc-mode-tab.is-active,.p3-editor-tab.active,.p3-editor-tab.is-active,
+  .p2-tabs>a.active,.rt-tabs>a.active,.fabric-tabs>a.active,.dk-tabs>a.active,.m10-tabs>a.active,.live-ops-tabs>a.active
+){
+  background:var(--surface-solid)!important;
+  color:var(--text)!important;
+  box-shadow:0 4px 14px rgba(4,8,12,.07)!important;
+}
+
+
+
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row).app-support{background:color-mix(in srgb,#69c9a5 4.5%,var(--surface-solid))!important}
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row).app-contact{background:color-mix(in srgb,#9c7bea 4.5%,var(--surface-solid))!important}
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row).app-document{background:color-mix(in srgb,#71b9e8 4.5%,var(--surface-solid))!important}
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row).app-growth{background:color-mix(in srgb,#f29a68 4.5%,var(--surface-solid))!important}
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row).app-research{background:color-mix(in srgb,#8b6ce5 4.5%,var(--surface-solid))!important}
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row).app-sales{background:color-mix(in srgb,#5c8ee6 4.5%,var(--surface-solid))!important}
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row).app-compliance{background:color-mix(in srgb,#ed796f 4.5%,var(--surface-solid))!important}
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row).app-rag{background:color-mix(in srgb,#4db7a5 4.5%,var(--surface-solid))!important}
+
+
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row):has(:is(.good,.healthy,.active,.delivered,.is-good)){background:color-mix(in srgb,#4bc98b 3.8%,var(--surface-solid))}
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row):has(:is(.warn,.watch,.pending,.retry,.is-warn)){background:color-mix(in srgb,#f5b942 4.5%,var(--surface-solid))}
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row):has(:is(.bad,.critical,.past-due,.is-bad)){background:color-mix(in srgb,#f56f6a 4.5%,var(--surface-solid))}
+body[data-app-shell="true"] main :is(tr,.p2-row,.p3-row,.p4-row,.p5-row,.p6-row,.fabric-row):has(:is(.review,.is-review)){background:color-mix(in srgb,#9b87f5 4.3%,var(--surface-solid))}
+
+
+body[data-app-shell="true"] main.fabric-page :is(.fabric-row,.customer-meter-row,.customer-billing-row,.customer-payment-row,.customer-activity-row){
+  min-height:58px;
+  padding:14px 16px!important;
+  font-size:14px!important;
+  line-height:1.45!important;
+}
+body[data-app-shell="true"] main.fabric-page :is(.fabric-row small,.customer-meter-row small,.customer-billing-row small,.customer-payment-row small,.customer-activity-row small){font-size:12px!important}
+body[data-app-shell="true"] main.fabric-page :is(.customer-health-grid,.customer-workspace-summary,.customer-subscription-card,.customer-plan-facts,.customer-usage-facts,.customer-audit-facts)>div{padding:16px!important}
+body[data-app-shell="true"] main.fabric-page :is(.customer-health-grid small,.customer-workspace-summary small,.customer-subscription-card small,.customer-plan-facts small,.customer-usage-facts small,.customer-audit-facts small){font-size:12px!important}
+body[data-app-shell="true"] main.fabric-page :is(.customer-health-grid b,.customer-workspace-summary b,.customer-subscription-card b,.customer-plan-facts b,.customer-usage-facts b,.customer-audit-facts b){font-size:13.5px!important}
+body[data-app-shell="true"] main.fabric-page .customer-app-card{padding:15px!important;gap:12px!important}
+body[data-app-shell="true"] main.fabric-page .customer-app-card>span:nth-child(2)>small,
+body[data-app-shell="true"] main.fabric-page .customer-app-card em,
+body[data-app-shell="true"] main.fabric-page .customer-app-metric small{font-size:12px!important}
+body[data-app-shell="true"] main.fabric-page .customer-app-card>span:nth-child(2)>b{font-size:13.5px!important}
+
+
+body[data-system-page] main .p8-panel-head{padding:20px 24px!important}
+body[data-system-page] main :is(.p8-form-grid,.p8-routing-grid,.p8-preference-list){padding:24px!important;gap:16px!important}
+body[data-system-page] main .p8-setting-list{padding:10px 24px!important}
+body[data-system-page] main .p8-setting-list>div{padding:16px 0!important;gap:14px!important}
+body[data-system-page] main .p8-settings-hero{padding:24px!important;margin-bottom:20px!important}
+body[data-system-page] main .p8-settings-hero p,
+body[data-system-page] main .p8-settings-hero dt,
+body[data-system-page] main .p8-settings-nav>button small,
+body[data-system-page] main .p8-settings-note p{font-size:12px!important;line-height:1.45!important}
+body[data-system-page] main .p8-settings-nav>button b{font-size:12.5px!important}
+body[data-system-page] main .p8-settings-nav>span{font-size:11.5px!important}
+body[data-system-page] main .p8-settings-panel{min-height:0!important}
+body[data-system-page] main .p8-settings-body{min-height:0!important}
+
+
+body[data-app-shell="true"] main [style*="color:var(--muted)"],
+body[data-app-shell="true"] main .text-muted{color:color-mix(in srgb,var(--muted) 94%,var(--text) 6%)!important}
+
+
+@media(max-width:1023px){
+  body[data-app-shell="true"] main{--premium-panel-pad:20px;--premium-row-pad-x:16px}
+  body[data-app-shell="true"] main :is(.p2-head,.p3-head,.p4-head,.p5-head,.p6-head,.p7-head,.p8-head,.cp-page-head,.rt-page-head,.pa-head,.ux-head,.fabric-head){align-items:flex-start!important;flex-wrap:wrap;gap:16px!important}
+}
+@media(max-width:639px){
+  body[data-app-shell="true"] main{--premium-panel-pad:16px;--premium-row-pad-x:14px;--premium-row-pad-y:12px}
+  body[data-app-shell="true"] main :is(.p2-head-copy h1,.p3-head h1,.p4-head h1,.p5-head h1,.p6-title h1,.p7-head h1,.p8-head h1,.cp-page-title,.rt-title,.pa-head h1,.ux-title,.fabric-head h1,.tc-head h1,.dk-head h1){font-size:27px!important}
+  body[data-app-shell="true"] main :is(.p2-head-copy p,.p3-head p,.p4-head p,.p5-head p,.p6-title p,.p7-head p,.p8-head p,.cp-page-copy,.rt-copy,.pa-head p,.ux-copy,.fabric-head p){font-size:13.5px!important}
+  body[data-app-shell="true"] main :is(.p2-tabs,.rt-tabs,.fabric-tabs,.dk-tabs,.m10-tabs,.live-ops-tabs,.tc-inspector-tabs,.tc-mode-tabs,.p3-editor-tabs){width:100%}
+}
+
+
+body[data-app-shell="true"] main :is(.p2-page,.p3-page,.p4-page,.p5-page,.p6-page,.cp-page,.rt-page,.tc-page) small,
+body[data-app-shell="true"] main :is(.p2-page,.p3-page,.p4-page,.p5-page,.p6-page,.cp-page,.rt-page,.tc-page) em{
+  font-size:12px!important;
+  line-height:1.42!important;
+}
+body[data-app-shell="true"] main .p3-lifecycle{font-size:12px!important;line-height:1.2!important}
+body[data-app-shell="true"] main .p3-model-id,
+body[data-app-shell="true"] main .p3-model-id span{font-size:12px!important;line-height:1.35!important}
+body[data-app-shell="true"] main .p4-id{font-size:12px!important}
+
+
+body[data-app-shell="true"] main :is(
+  .observe-heatmap-head,.observe-heatmap-row small,.observe-heatmap-legend,
+  .observe-forecast small,.observe-forecast b,.observe-forecast-note small,
+  .observe-capacity-plan-summary small,.observe-capacity-plan-summary span,
+  .observe-capacity-definition small,.observe-burn-card small,.observe-burn-card footer,.observe-burn-card footer b,
+  .observe-span-copy small,.observe-span-meta>b,.observe-segmented button,.observe-modal-card>header small,
+  .event-customer,.event-tool,.event-ai,.event-memory,.event-human,.event-resolved
+){font-size:12px!important;line-height:1.4!important}
+body[data-app-shell="true"] main .observe-heatmap-row>b{font-size:12.5px!important}
+body[data-app-shell="true"] main .observe-heatmap-row>span{min-height:40px}
+
+
+body[data-app-shell="true"] main :is(
+  .p6-budget-data small,.p6-budget-data b,.p6-flow-caption small,.p6-flow-node-top small,.p6-flow-node-top strong,
+  .p6-flow-stage small,.p6-flow-stage b,.p6-flow-link,.p6-flow-link strong,.p6-cost-scope-note,.p6-budget-note,
+  .p6-economics-banner small,.p6-inspector-facts small,.p6-inspector-facts b
+){font-size:12px!important;line-height:1.4!important}
+body[data-app-shell="true"] main .p6-flow-link{grid-template-columns:78px minmax(50px,1fr) 68px 132px}
+body[data-app-shell="true"] main .p6-budget-data span{padding:11px!important}
+
+
+body[data-monetize-page] main small,
+body[data-product-page] main small,
+body[data-app-shell="true"] main.fabric-page small{font-size:12px!important;line-height:1.42!important}
+body[data-app-shell="true"] main :is(.m10-plan-group-title,.m10-status,.m10-form-section-head small,.m10-entitlement-plan-grid label span,.m10-unit-card small,.plan-boundary-strip small,.plan-overage-card small){font-size:12px!important;line-height:1.4!important}
+body[data-app-shell="true"] main .m10-plan-group-title{margin-bottom:9px!important}
+body[data-app-shell="true"] main .m10-unit-card{padding:13px!important;column-gap:11px!important}
+body[data-app-shell="true"] main .m10-unit-card b{font-size:13px!important}
+body[data-app-shell="true"] main .m10-tabs :is(span,small){font-size:12px!important}
+body[data-app-shell="true"] main .m10-table.billing td::before{font-size:11.75px!important}
+
+
+body[data-system-page] main small,
+body[data-system-page] main :is(.p8-field>span,.p8-field>small,.p8-field>em,.p8-account-evidence dt,.p8-account-evidence dd,.p8-setting-list b,.p8-setting-list p,.p8-routing-grid b,.p8-routing-grid p,.p8-switch-row b,.p8-switch-row small,.p8-settings-hero p,.p8-settings-hero dt,.p8-settings-nav>button b,.p8-settings-nav>button small,.p8-settings-note p){font-size:12px!important;line-height:1.45!important}
+
+
+body[data-app-shell="true"] main :is(.p2-status,.p3-status,.p4-status,.p5-status,.p6-status,.p7-status,.m10-status,.cp-status,.rt-status,.pa-status,.qg-status,.of-status,.pill){font-size:12px!important;line-height:1.2!important}
+
+
+body[data-app-shell="true"] main:is(.p2-page,.p3-page,.p4-page,.p5-page,.p6-page,.cp-page,.rt-page,.tc-page) small,
+body[data-app-shell="true"] main:is(.p2-page,.p3-page,.p4-page,.p5-page,.p6-page,.cp-page,.rt-page,.tc-page) em{
+  font-size:12px!important;
+  line-height:1.42!important;
+}
+
+
+body[data-app-shell="true"] main :is(
+  .p3-facts small,.p3-feature-line span,.p3-space-stats small,.p3-pipeline-step small,.p3-trace-step small,
+  .p3-prompt-meta-footer small,.p3-version-metrics small,.p3-risk small,.p3-inspector-facts small,
+  .p3-evidence-copy small,.p3-ingest-copy small,.p3-source-job-link,.p3-source-footer,.p3-job-progress small,
+  .retrieval-query-kicker,.retrieval-query-context span,.retrieval-advanced-grid label,.retrieval-result-title small,
+  .retrieval-result em,.retrieval-grounded-answer small,.retrieval-citations button,.p3-grounding-row em,
+  .p3-retrieval-trace-step small,.p3-memory-modes small,.p3-mcp-branch-label,.p3-mcp-approval-node small,.p3-tool-demo-note
+){font-size:12px!important;line-height:1.42!important}
+
+
+body[data-observe-page="sessions"] main :is(.p5-panel span,.p5-panel small,.p5-panel em){font-size:12px!important;line-height:1.42!important}
+
+
+body[data-app-shell="true"] main :is(.m10-plan-card footer span,.m10-plan-card footer small,.m10-plan-card .plan-footer span){font-size:12px!important;line-height:1.4!important}
+body[data-system-page] main :is(.p8-mono,.p8-eyebrow,.p8-settings-nav>span){font-size:12px!important;line-height:1.4!important}
+
+
+body[data-analytics-page="cost-budgets"] main :is(.p6-chart-legend,.p6-chart-legend span,.p6-chart-legend b,.p6-budget-pace,.p6-budget-pace b){font-size:12px!important}
+
+
+body[data-app-shell="true"] main :is(.eval-vs,.eval-kicker,.p4-table-note span){font-size:12px!important;line-height:1.4!important}
+body[data-app-shell="true"] main.p4-page :is(.p4-review-sla b,.p4-review-owner b,.p4-review-meta b){font-size:12px!important}
+body[data-observe-page="sessions"] main .observe-session-moments-head p{font-size:12px!important;line-height:1.45!important}
+body[data-analytics-page="cost-budgets"] main .p6-chart-footnote,
+body[data-analytics-page="cost-budgets"] main .p6-chart-footnote b{font-size:12px!important;line-height:1.45!important}
+body[data-monetize-page="plans-entitlements"] main :is(.m10-plan-card-footer,.m10-plan-card-footer span,.m10-plan-card-footer b,.m10-plan-boundary,.m10-plan-boundary span,.m10-plan-boundary b){font-size:12px!important;line-height:1.42!important}
+body[data-app-shell="true"] main.p4-page :is(.p4-review-item b,.p4-review-decision-meta b){font-size:12px!important;line-height:1.4!important}
+body[data-monetize-page="plans-entitlements"] main :is(.m10-plan-summary span,.m10-entitlement-note,.m10-entitlement-note span,.m10-entitlement-note b){font-size:12px!important;line-height:1.42!important}
+
+body[data-app-shell="true"] main :is(
+  .p2-eyebrow,.p3-eyebrow,.p4-eyebrow,.p5-eyebrow,.p6-eyebrow,.p7-eyebrow,.p8-eyebrow,
+  .cp-eyebrow,.rt-eyebrow,.pa-eyebrow,.ux-kicker,.customer-detail-eyebrow,[class*="kicker"]
+){font-size:12px!important}
+
+
+body[data-app-shell="true"] main small,
+body[data-app-shell="true"] main em{font-size:12px!important;line-height:1.42!important}
+body[data-app-shell="true"] main :is(
+  [class*="meta"],[class*="caption"],[class*="label"],[class*="kicker"],[class*="eyebrow"],
+  [class*="badge"],[class*="status"],[class*="pill"],[class*="chip"],[class*="tag"]
+){font-size:max(12px,.9em)!important}
+
+
+
+
+body[data-active-page="agents"] main :is(.p2-run-meta b,.agent-branch-return b,.agent-branch-label){font-size:12px!important;line-height:1.4!important}
+body[data-active-page="applications"] main .p2-app-owner{font-size:12px!important;line-height:1.42!important}
+body[data-active-page="approval-center"] main :is(.approval-reviewer-avatar,.approval-risk){font-size:12px!important;line-height:1.2!important}
+body[data-active-page="contact-center"] main :is(.contact-approval-link,.contact-queue-head strong){font-size:12px!important;line-height:1.4!important}
+
+
+body[data-active-page="test-console"] main :is(
+  .conversation-side>span,.route-step-copy>b,.tc-result-metrics span,.trace-metric,
+  .tc-economics span,.tc-evidence-stat>span,.tc-workspace-note,.tc-safety-state,
+  .tc-safety-banner>div>span,.tc-config-safety span,.tc-path-label b,.composer-file b,
+  .tc-panel-caption b,.tc-policy-note span,.tc-result-actions .tc-button
+){font-size:12px!important;line-height:1.4!important}
+body[data-active-page="test-console"] main .tc-button{min-height:40px!important;padding:8px 12px!important}
+
+
+body[data-active-page="requests-runs"] main :is(
+  .cp-status,.cp-stream-meta span,.request-lineage span,.orvexa-pagination-size,.apexcharts-legend-text
+){font-size:12px!important;line-height:1.4!important}
+body[data-active-page="requests-runs"] main .request-lineage{gap:8px!important}
+
+
+body[data-active-page="prompts"] main .p3-line-number{font-size:12px!important;line-height:1.4!important}
+body[data-active-page="retrieval-grounding"] main :is(
+  .retrieval-question>span,.retrieval-policy-field>span,.retrieval-evidence-head p,.retrieval-rank,.p3-retrieval-trace-step>b
+){font-size:12px!important;line-height:1.4!important}
+body[data-active-page="tools-mcp"] main :is(.p3-tool-visible-count,.p3-governance-item b){font-size:12px!important;line-height:1.4!important}
+
+
+body[data-active-page="ai-issues"] main .p5-trace-strip b{font-size:12px!important;line-height:1.35!important}
+body[data-active-page="alerts-incidents"] main .observe-incident-impact span{font-size:12px!important;line-height:1.4!important}
+body[data-active-page="logs-errors"] main :is(.p5-error-foot span,.observe-live-state,.observe-live-state b){font-size:12px!important;line-height:1.4!important}
+body[data-active-page="performance-slo"] main :is(.observe-chart-foot span,.p5-burn-policy .p5-burn strong){font-size:12px!important;line-height:1.4!important}
+body[data-active-page="traces"] main :is(.observe-waterfall-scale span,.observe-span-copy b,.observe-trace-detail-head p,.observe-trace-quality-note p,.observe-detail-section-head p){font-size:12px!important;line-height:1.42!important}
+
+
+body[data-active-page="rate-limits-quotas"] main .p6-policy strong,
+body[data-active-page="usage-analytics"] main .p6-policy strong{font-size:12px!important;line-height:1.3!important}
+
+
+body[data-active-page="datasets"] main .p4-difficulty{font-size:12px!important;line-height:1.2!important}
+body[data-active-page="policies-guardrails"] main :is(.p4-boundary-facts b,.p4-policy-scope span,.p4-match-control span){font-size:12px!important;line-height:1.4!important}
+body[data-active-page="safety-redteam"] main :is(.p4-risk-level,.p4-severity,.p4-campaign-progress span,.p4-campaign-progress b){font-size:12px!important;line-height:1.4!important}
+
+
+body[data-active-page="api-access"] main .p7-sealed :is(span,p,a){font-size:12px!important;line-height:1.45!important}
+body[data-active-page="data-privacy"] main :is(.p7-classification-grid article header span,.p7-inline-link){font-size:12px!important;line-height:1.4!important}
+body[data-active-page="environments"] main :is(.p7-env-detail-head p,.p7-env-detail-head p b){font-size:12px!important;line-height:1.42!important}
+body[data-active-page="roles-audit"] main :is(.pf-sod-warning p,.p7-role-grid button header b,.p7-role-grid button>p){font-size:12px!important;line-height:1.42!important}
+body[data-active-page="secrets-credentials"] main .p7-vault-seal span{font-size:12px!important;line-height:1.3!important}
+body[data-active-page="team-members"] main .p7-person>span{font-size:12px!important;line-height:1!important}
+body[data-active-page="workspace-detail"] main .p7-context-links :is(a,span){font-size:12px!important;line-height:1.4!important}
+body[data-active-page="workspaces-tenants"] main :is(.p7-avatar,.p7-health-reason span,.p7-health-reason b,.p7-org-path span){font-size:12px!important;line-height:1.4!important}
+
+
+body[data-active-page="notification-center"] main :is(.p8-notification-list header span,.p8-notification-list header b,.p8-notification-item header span,.p8-notification-item header b){font-size:12px!important;line-height:1.35!important}
+body[data-active-page="profile-account"] main :is(.p8-profile-summary>p,.p8-profile-email,.p8-save-state,.p8-account-evidence>a){font-size:12px!important;line-height:1.42!important}
+
+
+body[data-devkit-page="forms"] main :is(.dk-tags>span,.dk-switch-row p,.dk-coverage>span,footer p){font-size:12px!important;line-height:1.42!important}
+body[data-devkit-page="forms"] main p:not(.dk-head p){font-size:12px!important;line-height:1.45!important}
+body[data-devkit-page="tables"] main :is(.dk-table-panel b,.dk-table-panel .dk-mono,.dk-table-panel .orvexa-pagination-size,.dk-table-meta span,.dk-table-filters span){font-size:12px!important;line-height:1.4!important}
+body[data-devkit-page="tables"] main .dk-panel article p{font-size:12px!important;line-height:1.45!important}
+body[data-devkit-page="charts"] main .dk-chart-card footer :is(span,p){font-size:12px!important;line-height:1.45!important}
+body[data-devkit-page="charts"] main p:not(.dk-head p){font-size:12px!important;line-height:1.45!important}
+body[data-devkit-page="ui-system"] main :is(.dk-system-index a,.dk-type-specimens span,.dk-tooltip){font-size:12px!important;line-height:1.4!important}
+body[data-devkit-page="ui-system"] main .dk-panel p{font-size:12px!important;line-height:1.45!important}
+
+
+body[data-app-shell="true"] main :is(.apexcharts-legend-text,.orvexa-pagination-size){font-size:12px!important;line-height:1.35!important}
+
+
+body[data-active-page="requests-runs"] main .request-ledger-panel .cp-status,
+body[data-active-page="requests-runs"] main .request-support-grid .cp-stream-meta span,
+body[data-active-page="requests-runs"] main .request-lineage span,
+body[data-active-page="requests-runs"] main .request-ledger-panel .orvexa-pagination-size,
+body[data-active-page="requests-runs"] main .apexcharts-legend .apexcharts-legend-text{font-size:12px!important;line-height:1.4!important}
+
+body[data-active-page="data-privacy"] main .p7-class-grid article header span,
+body[data-active-page="data-privacy"] main .p7-class-grid article header b{font-size:12px!important;line-height:1.3!important}
+
+body[data-active-page="notification-center"] main .p8-notification-main header span,
+body[data-active-page="notification-center"] main .p8-notification-main header b{font-size:12px!important;line-height:1.35!important}
+
+body[data-active-page="profile-account"] main .p8-profile-summary :is(dt,dd){font-size:12px!important;line-height:1.4!important}
+
+body[data-devkit-page="tables"] main .dk-table-notes article p{font-size:12px!important;line-height:1.45!important}
+body[data-active-page="profile-account"] main .p8-profile-summary .p8-profile-tags>span{font-size:12px!important;line-height:1.35!important}
+
+
+body[data-product-page="customer-detail"] main .customer-health-grid span,
+body[data-product-page="customer-detail"] main .customer-workspace-summary span{
+  font-size:12px!important;
+  line-height:1.45!important;
+}
+
+
+
+body[data-app-shell="true"] main :is(
+  .p2-head-copy h1,.p3-head h1,.p4-head h1,.p5-head h1,.p6-title h1,.p7-head h1,.p8-head h1,
+  .cp-page-title,.rt-title,.pa-head h1,.ux-title,.fabric-head h1,.tc-head-copy h1,.dk-head h1,.m10-head h1
+){
+  font-size:28px!important;
+  line-height:1.14!important;
+}
+@media(max-width:639px){
+  body[data-app-shell="true"] main :is(
+    .p2-head-copy h1,.p3-head h1,.p4-head h1,.p5-head h1,.p6-title h1,.p7-head h1,.p8-head h1,
+    .cp-page-title,.rt-title,.pa-head h1,.ux-title,.fabric-head h1,.tc-head-copy h1,.dk-head h1,.m10-head h1
+  ){font-size:25px!important;line-height:1.16!important}
+}
