@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html data-sidebar-mode="icon" data-sidebar-tone="pearl" class="dark" lang="en">
+
+
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Orvexa Admin Test Console — validate application routes, models, knowledge, tools, guardrails, cost and traces before production release." name="description"/>
+<link data-orvexa-default-favicon="svg" rel="icon" type="image/svg+xml" href="../assets/images/orvexa-favicon.svg"/><link data-orvexa-default-favicon="png" rel="icon" type="image/png" sizes="64x64" href="../assets/images/orvexa-favicon.png"/><title>Orvexa — Admin Test Console</title>
+<script>
+    (() => { try { const saved = localStorage.getItem('orvexa-theme-v16'); document.documentElement.classList.toggle('dark', saved ? saved === 'dark' : false); } catch (_) {} })();
+  </script><script>(()=>{try{const d=localStorage.getItem('orvexa-direction-v16');if(d)document.documentElement.dir=d;const density=localStorage.getItem('orvexa-density-v16');if(density)document.documentElement.dataset.density=density}catch(_){}})();</script>
+<link href="https://fonts.googleapis.com/" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="../assets/css/tailwind.css" rel="stylesheet"/>
+<link href="../assets/css/admin-runtime.css" rel="stylesheet"/>
+<link href="../assets/css/workspace.css" rel="stylesheet"/><link href="../assets/css/global-quality.css" rel="stylesheet"/>
+<link href="../assets/css/operations-studio.css" rel="stylesheet"/>
+<link href="../assets/css/topbar.css" rel="stylesheet"/><link href="../assets/css/sidebar.css" rel="stylesheet"/><link href="../assets/css/customizer.css" rel="stylesheet"/><link href="../assets/css/app-shell.css" rel="stylesheet"/><script id="app-shell-bootstrap">(()=>{try{const r=document.documentElement;const theme=localStorage.getItem('orvexa-theme-v16');r.classList.toggle('dark',theme?theme==='dark':false);const language=localStorage.getItem('orvexa-language-v14')||'en';r.lang=language;r.dir=language==='ar'?'rtl':'ltr';const density=localStorage.getItem('orvexa-density-v16');if(density)r.dataset.density=density;const mode=localStorage.getItem('orvexa-sidebar-mode');const tone=localStorage.getItem('orvexa-sidebar-tone');r.dataset.sidebarMode=mode==='full'?'full':'icon';r.dataset.sidebarTone=['pearl','warm','dark'].includes(tone)?tone:'pearl'}catch(_){}})();</script><link href="../assets/css/product-system.css" rel="stylesheet"/><link href="../assets/css/build-pages.css" rel="stylesheet"/><link href="../assets/css/layout-compatibility.css" rel="stylesheet"/><link href="../assets/css/test-console.css" rel="stylesheet"/>
+<link href="../assets/css/global-visualse209.css?v=1.0.0" rel="stylesheet"/><link href="../assets/css/build-workflow-visualse209.css?v=1.0.0" rel="stylesheet"/>
+<link href="../assets/css/responsivee209.css?v=1.0.0" rel="stylesheet"/></head>
+<body class="test-console-body" data-active-page="test-console" data-base-path=".." data-app-shell="true">
+<div aria-hidden="true" class="fixed inset-0 z-40 hidden bg-black/55 backdrop-blur-sm lg:hidden" id="mobile-backdrop"></div>
+<aside aria-label="Primary navigation" class="fixed inset-y-0 left-0 z-50 flex w-72 flex-col border-r transition-[width,transform] duration-300 lg:translate-x-0" id="sidebar" style="background:color-mix(in srgb,var(--surface-solid) 95%,transparent);border-color:var(--line);backdrop-filter:blur(24px)">
+<div class="flex h-[72px] shrink-0 items-center justify-between border-b px-5" style="border-color:var(--line)">
+<a aria-label="Orvexa home" class="flex min-w-0 items-center gap-3" href="../index.html" id="sidebar-brand">
+<span class="brand-mark"><i class="size-4" data-lucide="sparkles"></i><span class="brand-live"></span></span>
+<span class="min-w-0" id="sidebar-brand-copy"><span class="font-display block text-[18px] font-bold tracking-[-0.045em]">Orvexa</span><span class="block truncate text-[12px] font-bold uppercase tracking-[0.16em]" style="color:var(--muted)">Artificial Intelligence OS</span></span>
+</a>
+<button aria-label="Close navigation" class="icon-button lg:hidden" id="mobile-close"><i class="size-4" data-lucide="x"></i></button>
+</div>
+<div class="min-h-0 flex-1 overflow-y-auto px-3 pb-5 pt-3">
+<div id="primary-navigation"></div>
+</div>
+
+</aside>
+<div class="min-h-screen transition-[padding] duration-300 lg:pl-72" id="app-main">
+<header class="sticky top-0 z-30 border-b px-3 backdrop-blur-2xl sm:px-5 lg:px-6" style="border-color:var(--line);background:color-mix(in srgb,var(--bg) 82%,transparent)">
+<div class="flex h-[72px] items-center gap-2">
+<button aria-label="Open navigation" class="icon-button lg:hidden" id="mobile-menu"><i class="size-[18px]" data-lucide="menu"></i></button>
+<button aria-label="Collapse sidebar" class="icon-button hidden lg:inline-flex" id="sidebar-toggle"><i class="size-[18px]" data-lucide="panel-left-close"></i></button>
+<button aria-haspopup="dialog" class="ml-0 flex h-10 min-w-0 flex-1 items-center gap-2 rounded-xl border px-3 text-left transition hover:-translate-y-0.5 md:max-w-lg" id="command-trigger" style="border-color:var(--line);background:color-mix(in srgb,var(--surface-solid) 76%,transparent);color:var(--muted)">
+<i class="size-4 shrink-0" data-lucide="search"></i><span class="truncate text-[13px]">Search Orvexa, ask AI, or run a command...</span><span class="ml-auto hidden rounded-md border px-1.5 py-0.5 text-[12px] font-black sm:inline-flex" style="border-color:var(--line)">⌘ K</span>
+</button>
+<div class="ml-auto flex items-center gap-1.5 topbar-tools">
+<div class="dropdown relative">
+<button aria-expanded="false" aria-haspopup="true" aria-label="Notifications" class="dropdown-trigger icon-button relative" id="notification-trigger" type="button">
+<i class="size-[18px]" data-lucide="bell"></i><span class="absolute right-2 top-2 size-2 rounded-full border-2" id="notification-dot" style="background:var(--danger);border-color:var(--bg)"></span>
+</button>
+<div aria-label="Notifications" class="dropdown-panel notification-panel right-0 top-[calc(100%+10px)]" role="menu">
+<div class="notification-panel-head"><div><p>Notifications</p><span><b id="notification-count">3</b> need attention</span></div><button class="topbar-text-action" data-mark-notifications-read="" type="button">Mark all read</button></div>
+<div class="notification-list">
+<a class="topbar-notification" data-notification-item="" href="alerts-incidents.html"><span class="topbar-notification-icon is-danger"><i data-lucide="triangle-alert"></i></span><span class="topbar-notification-copy"><b>Provider latency threshold</b><small>Voice route crossed P95 policy</small><time>2m ago</time></span><i class="notification-unread"></i></a>
+<a class="topbar-notification" data-notification-item="" href="human-review.html"><span class="topbar-notification-icon is-warn"><i data-lucide="user-check"></i></span><span class="topbar-notification-copy"><b>7 reviews need attention</b><small>Grounding, safety and policy exceptions</small><time>6m ago</time></span><i class="notification-unread"></i></a>
+<a class="topbar-notification" data-notification-item="" href="cost-budgets.html"><span class="topbar-notification-icon is-good"><i data-lucide="circle-dollar-sign"></i></span><span class="topbar-notification-copy"><b>Routing savings increased</b><small>Cache + fallback saved $428 this cycle</small><time>18m ago</time></span><i class="notification-unread"></i></a>
+</div>
+<a class="topbar-panel-footer" href="notification-center.html">View notification center <i data-lucide="arrow-right"></i></a>
+</div>
+</div>
+<div class="dropdown relative hidden sm:block">
+<button aria-expanded="false" aria-haspopup="true" aria-label="Choose language" class="dropdown-trigger icon-button topbar-language-trigger" title="Language" type="button"><span class="topbar-current-flag" id="language-flag"><img alt="English flag" src="../assets/images/flags/us.svg"/></span></button>
+<div aria-label="Language" class="dropdown-panel language-panel right-0 top-[calc(100%+10px)]" role="menu">
+<div class="language-panel-head"><span>Language</span><small>Interface locale</small></div>
+<button class="language-option" data-language-option="en" type="button"><span class="language-flag"><img alt="" src="../assets/images/flags/us.svg"/></span><span class="language-copy"><b>English</b></span><i class="language-check" data-lucide="check"></i></button>
+<button class="language-option" data-language-option="fr" type="button"><span class="language-flag"><img alt="" src="../assets/images/flags/fr.svg"/></span><span class="language-copy"><b>Français</b></span><i class="language-check" data-lucide="check"></i></button>
+<button class="language-option" data-language-option="de" type="button"><span class="language-flag"><img alt="" src="../assets/images/flags/de.svg"/></span><span class="language-copy"><b>Deutsch</b></span><i class="language-check" data-lucide="check"></i></button>
+<button class="language-option" data-language-option="it" type="button"><span class="language-flag"><img alt="" src="../assets/images/flags/it.svg"/></span><span class="language-copy"><b>Italiano</b></span><i class="language-check" data-lucide="check"></i></button>
+<button class="language-option" data-language-option="ar" type="button"><span class="language-flag"><img alt="" src="../assets/images/flags/sa.svg"/></span><span class="language-copy"><b>العربية</b></span><i class="language-check" data-lucide="check"></i></button>
+</div>
+</div>
+<button aria-controls="layout-settings-panel" aria-expanded="false" aria-label="Layout settings" class="icon-button" id="layout-settings-trigger" title="Layout settings" type="button"><i class="size-[18px]" data-lucide="settings-2"></i></button><button aria-label="Toggle light or dark mode" class="icon-button" id="theme-toggle" title="Light / dark mode"><i class="size-[18px]" data-lucide="moon" data-theme-icon=""></i></button>
+<div class="dropdown relative profile-dropdown">
+<button aria-expanded="false" aria-haspopup="true" aria-label="Profile menu" class="dropdown-trigger topbar-profile-trigger" type="button"><span class="topbar-avatar">AR</span><span class="topbar-profile-copy"><b>Alex Rivera</b><small>AI Platform Admin</small></span><i class="topbar-profile-chevron" data-lucide="chevron-down"></i></button>
+<div aria-label="Profile menu" class="dropdown-panel profile-panel right-0 top-[calc(100%+10px)]" role="menu">
+<div class="profile-panel-head"><span class="profile-panel-avatar">AR</span><span><b>Alex Rivera</b><small>alex@nova.example</small></span></div>
+<div class="profile-workspace"><span class="status-dot"></span><span><b>Nova Intelligence</b><small>Enterprise workspace</small></span></div>
+<nav class="profile-menu-links" aria-label="Account">
+<a class="topbar-profile-link" href="profile-account.html"><span><i data-lucide="user-round"></i></span><b>Profile &amp; account</b><i data-lucide="chevron-right"></i></a>
+<a class="topbar-profile-link" href="security-sessions.html"><span><i data-lucide="shield-check"></i></span><b>Security &amp; sessions</b><i data-lucide="chevron-right"></i></a>
+<a class="topbar-profile-link" href="settings.html"><span><i data-lucide="settings-2"></i></span><b>Settings</b><i data-lucide="chevron-right"></i></a>
+<a class="topbar-profile-link" href="subscriptions-billing.html"><span><i data-lucide="credit-card"></i></span><b>Billing &amp; credits</b><i data-lucide="chevron-right"></i></a>
+</nav>
+<div class="profile-panel-footer"><a class="topbar-profile-link is-danger" href="../auth/sign-in.html"><span><i data-lucide="log-out"></i></span><b>Sign out</b><i data-lucide="arrow-right"></i></a></div>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="tc-page" id="main-content">
+  <header class="tc-page-head">
+    <div class="tc-head-copy">
+      <div class="tc-eyebrow"><i data-lucide="flask-conical"></i><span>Admin Test Console</span></div>
+      <h1>Billing dispute validation</h1>
+      <div class="tc-status-row">
+        <span class="tc-badge is-shadow"><i data-lucide="scan-eye"></i>Shadow</span>
+        <span class="tc-badge is-safe"><i data-lucide="shield-check"></i>No production writes</span>
+        <span class="tc-badge is-passed" id="test-state-badge"><i data-lucide="circle-check"></i>Passed</span>
+      </div>
+    </div>
+    <div class="tc-head-actions">
+      <button class="tc-mobile-control" id="toggle-history" type="button"><i data-lucide="sliders-horizontal"></i><span>Configure</span></button>
+      <button class="tc-button" data-open-compare="" type="button"><i data-lucide="columns-3"></i>Compare A/B</button>
+      <button class="tc-button primary" id="save-test-case" type="button"><i data-lucide="bookmark-plus"></i>Save test case</button>
+      <button class="tc-icon-button" id="open-research" title="Deep RAG test" type="button"><i data-lucide="search-check"></i></button>
+      <button class="tc-icon-button" id="toggle-inspector" title="Open execution evidence" type="button"><i data-lucide="panel-right"></i></button>
+      <span id="workspace-mode-label" hidden>Single Test</span>
+    </div>
+  </header>
+
+  <div class="tc-layout">
+    <aside class="tc-history tc-config-rail" id="conversation-history" aria-label="Test configuration and saved test runs">
+      <div class="tc-side-head">
+        <div><h2>Test configuration</h2><p>Production-safe inputs for this validation.</p></div>
+        <button class="tc-icon-button tc-mobile-close" id="close-history" type="button" aria-label="Close test configuration"><i data-lucide="x"></i></button>
+      </div>
+
+      <div class="tc-config-stack" aria-label="Configuration controls">
+        <label class="tc-config-field"><span>Application</span><select id="test-application" title="Application under test"><option value="APP-CONTACT-002">AI Contact Center</option><option value="APP-SUPPORT-001">Support AI</option><option value="APP-DOC-003">Document Intelligence</option><option value="APP-GROWTH-004">Growth Assistant</option></select><small class="tc-config-id" id="test-application-id" title="Application ID">APP-CONTACT-002</small></label>
+        <label class="tc-config-field"><span>Environment</span><select id="test-environment"><option>Production shadow</option><option>Staging</option><option>Development</option></select></label>
+        <div class="tc-config-field"><span>Route / model</span><div class="model-select-wrap tc-config-route">
+          <button aria-haspopup="menu" class="tc-route-selector" id="model-selector" type="button"><i data-lucide="route"></i><span><small>Route</small><b id="selected-model-name">Auto Router</b></span><i data-lucide="chevron-down"></i></button>
+          <div class="model-menu" id="model-menu" role="menu">
+            <div class="model-menu-label">Routing strategy</div>
+            <button class="model-choice" data-model-choice="Auto Router" type="button"><span class="model-choice-icon"><i data-lucide="route"></i></span><span><b>Auto Router</b><small>Policy selects model per turn</small></span><span>Best fit</span></button>
+            <button class="model-choice" data-model-choice="Astra Reasoner" type="button"><span class="model-choice-icon"><i data-lucide="brain-circuit"></i></span><span><b>Astra Reasoner</b><small>Reasoning · production route</small></span><span>96.8</span></button>
+            <button class="model-choice" data-model-choice="Meridian Core" type="button"><span class="model-choice-icon"><i data-lucide="text-cursor-input"></i></span><span><b>Meridian Core</b><small>Long context · narrative</small></span><span>95.3</span></button>
+            <button class="model-choice" data-model-choice="Orbit Pro" type="button"><span class="model-choice-icon"><i data-lucide="scan-search"></i></span><span><b>Orbit Pro</b><small>Fast multimodal route</small></span><span>92.9</span></button>
+          </div>
+        </div></div>
+        <label class="tc-config-field"><span>Prompt version</span><select id="test-prompt-version" title="Prompt version under test"><option value="PROMPT-CONTACT-09:v21">Contact v21</option><option value="PROMPT-CONTACT-09:v20">Contact v20</option><option value="PROMPT-SUPPORT-17:v18">Support v18 · Candidate</option></select><small class="tc-config-id" id="test-prompt-id" title="Prompt version ID">PROMPT-CONTACT-09:v21</small></label>
+        <details class="tc-advanced-config">
+          <summary><span><i data-lucide="sliders-horizontal"></i><b>Advanced controls</b></span><em>4 configured</em></summary>
+          <div class="tc-advanced-config-body">
+            <label class="tc-config-field"><span>Dataset case</span><select id="test-dataset-case"><option>CASE-VOICE-118 · Billing dispute</option><option>CASE-POLICY-084 · Restricted write</option><option>CASE-RAG-041 · Grounding coverage</option><option>Ad hoc synthetic case</option></select></label>
+            <label class="tc-config-field"><span>Knowledge</span><select id="test-knowledge"><option>Billing Policy · KS-CONTACT-02</option><option>Support Knowledge · KS-SUPPORT-01</option><option>No retrieval</option></select></label>
+            <label class="tc-config-field"><span>Tool policy</span><select id="test-tool-policy"><option>Read-only CRM · MCP-CRM-01</option><option>Knowledge only</option><option>No tools</option></select></label>
+            <label class="tc-config-field"><span>Guardrails</span><select id="test-guardrails"><option>POL-VOICE-04 · PII + write boundary</option><option>POL-SUPPORT-07 · Support policy</option><option>Monitor only</option></select></label>
+          </div>
+        </details>
+      </div>
+
+      <div class="tc-config-safety"><i data-lucide="shield-check"></i><div><b>Production shadow</b><span>External write actions stay disabled for this test.</span></div></div>
+
+      <details class="tc-saved-runs">
+        <summary><span><i data-lucide="history"></i><b>Saved test runs</b></span><em>6 runs</em></summary>
+        <div class="tc-saved-runs-body">
+          <button class="tc-new-run" id="new-conversation" type="button"><i data-lucide="plus"></i>New test run</button>
+          <label class="tc-search"><i data-lucide="search"></i><input id="conversation-search" type="search" placeholder="Search test runs" aria-label="Search saved test runs"/></label>
+          <div class="tc-segments" id="history-filter-tabs">
+            <button class="active" data-run-filter="recent" type="button">Recent</button>
+            <button data-run-filter="passed" type="button">Passed</button>
+            <button data-run-filter="review" type="button">Review</button>
+            <button data-run-filter="archived" type="button">Archived</button>
+          </div>
+          <div class="tc-history-list" id="conversation-list"></div>
+        </div>
+      </details>
+    </aside>
+
+    <section class="tc-workspace" aria-label="AI validation workspace">
+      <div class="tc-workspace-bar">
+        <div class="tc-segments tc-mode-tabs" aria-label="Test mode">
+          <button class="active" data-workspace-mode="Single Test" type="button">Single Test</button>
+          <button data-workspace-mode="Compare Models" type="button">Compare Models</button>
+          <button data-workspace-mode="Deep RAG" type="button">Deep RAG</button>
+          <button data-workspace-mode="Agent Test" type="button">Agent Test</button>
+        </div>
+        <span class="tc-workspace-note"><i data-lucide="shield-check"></i>Production-safe validation</span>
+      </div>
+
+      <div class="tc-path-card" aria-label="Execution path">
+        <div class="tc-path-label"><span><i data-lucide="route"></i><b>Execution path</b></span><em>6 steps</em></div>
+        <div class="tc-route-flow" id="route-flow" aria-label="AI execution flow"></div>
+      </div>
+
+      <div class="tc-safety-banner"><i data-lucide="shield-check"></i><div><b>Synthetic shadow test</b><span>No production write actions</span></div><span class="tc-safety-state"><i></i>Policy boundary active</span></div>
+
+      <article class="tc-canvas">
+        <div class="tc-canvas-head">
+          <div><span class="tc-canvas-kicker">Test interaction</span><h2>Scenario input</h2></div>
+          <span class="tc-canvas-meta">APP-CONTACT-002 · production shadow · read-only</span>
+        </div>
+        <label class="tc-scenario-label" for="workspace-prompt">Prompt / messages</label>
+        <textarea id="workspace-prompt" class="tc-scenario" rows="5">Simulate a frustrated billing-dispute voice interaction for APP-CONTACT-002. Validate routing, grounded knowledge, CRM read-only lookup, PII redaction and human-handoff policy. Do not execute any write action.</textarea>
+
+        <div class="tc-input-utilities">
+          <details>
+            <summary><span><i data-lucide="variable"></i><b>Variables</b></span><em>2 set</em></summary>
+            <div class="tc-utility-body"><code>customer_id = ext_test_18422</code><code>locale = en-US</code></div>
+          </details>
+          <details>
+            <summary><span><i data-lucide="braces"></i><b>JSON payload</b></span><em>Synthetic fixture</em></summary>
+            <div class="tc-utility-body"><code>{ "case_type": "billing_dispute", "channel": "voice", "write_allowed": false }</code></div>
+          </details>
+        </div>
+
+        <div class="tc-attachments" id="composer-files"></div>
+        <div class="tc-composer-bar">
+          <div class="tc-tools">
+            <button class="composer-tool" id="attach-file" type="button"><i data-lucide="paperclip"></i><span>Attach</span></button>
+            <button class="composer-tool active" type="button"><i data-lucide="globe-2"></i><span>Web</span></button>
+            <button class="composer-tool active" type="button"><i data-lucide="database"></i><span>Knowledge</span></button>
+            <button class="composer-tool" type="button"><i data-lucide="wrench"></i><span>Tools</span></button>
+            <button class="composer-tool" id="voice-input" aria-pressed="false" type="button"><i data-lucide="audio-waveform"></i><span id="voice-status">Voice</span></button>
+          </div>
+          <div class="tc-run-meta"><span><b id="context-usage-inline">23.4K / 128K</b> context</span><span><b>~$0.18</b> est.</span></div>
+          <button class="tc-run-button" id="send-workspace" type="button"><span>Run test</span><i data-lucide="play"></i></button>
+        </div>
+      </article>
+
+      <section class="tc-result" id="test-result" aria-live="polite">
+        <div class="tc-result-head">
+          <div><span class="tc-result-eyebrow">Output & evaluation</span><h2 id="test-result-title">Validation result</h2></div>
+        </div>
+        <p id="test-result-copy">The route stayed grounded in approved billing guidance, preserved read-only CRM access, and retained the human-handoff boundary.</p>
+        <div class="tc-result-metrics">
+          <div><span>Quality</span><b id="result-quality">96.8</b></div>
+          <div><span>Latency</span><b id="result-latency">318ms</b></div>
+          <div><span>Cost</span><b id="result-cost">$0.014</b></div>
+          <div><span>Grounding</span><b id="result-grounding">97.1%</b></div>
+          <div><span>Policy</span><b id="result-policy">Passed</b></div>
+        </div>
+        <div class="tc-result-actions">
+          <a class="tc-button" href="traces6bfd.html?trace=TRC-TEST-VOICE-118"><i data-lucide="git-branch"></i>Open trace</a>
+          <button class="tc-button" id="result-add-dataset" type="button"><i data-lucide="database-zap"></i>Add to dataset</button>
+          <a class="tc-button" href="evaluations2419.html?case=CASE-VOICE-118"><i data-lucide="flask-conical"></i>Create evaluation</a>
+          <button class="tc-button" id="promote-prompt" type="button"><i data-lucide="rocket"></i>Promote prompt</button>
+        </div>
+      </section>
+    </section>
+
+    <aside class="tc-inspector" id="workspace-inspector" aria-label="Execution evidence">
+      <div class="tc-side-head">
+        <div><h2>Execution evidence</h2><p>Observable proof from this test run.</p></div>
+        <button class="tc-icon-button tc-mobile-close" id="close-inspector" type="button" aria-label="Close execution evidence"><i data-lucide="x"></i></button>
+      </div>
+
+      <div class="tc-evidence-summary" aria-label="Evidence summary">
+        <div class="tc-evidence-stat is-score"><span>Score</span><b>96.8</b></div>
+        <div class="tc-evidence-stat" title="ROUTE-VOICE-07"><span>Route</span><b>VOICE-07</b></div>
+        <div class="tc-evidence-stat" title="3 approved knowledge sources retrieved"><span>Sources</span><b>3</b></div>
+      </div>
+
+      <div class="tc-inspector-tabs" role="tablist">
+        <button class="active" data-inspector-tab="trace" type="button">Trace</button>
+        <button data-inspector-tab="retrieval" type="button">Retrieval</button>
+        <button data-inspector-tab="tools" type="button">Tools</button>
+        <button data-inspector-tab="context" type="button">Context</button>
+      </div>
+      <div class="tc-inspector-panel active" data-inspector-panel="trace">
+        <div class="tc-panel-caption"><span>Execution</span><b>6 steps</b></div>
+        <div class="trace-list" id="trace-list"></div>
+        <details class="tc-run-details">
+          <summary><span><i data-lucide="gauge"></i><b>Run economics</b></span><em>318ms · $0.014</em></summary>
+          <div class="tc-economics">
+            <div><span>Input</span><b>4,820 tok</b></div><div><span>Output</span><b>1,284 tok</b></div><div><span>Total latency</span><b>318ms</b></div><div><span>Est. cost</span><b>$0.014</b></div>
+          </div>
+        </details>
+        <div class="tc-policy-note"><i data-lucide="shield-check"></i><div><b>Guardrail verdict: passed</b><span>PII redaction on · write actions disabled.</span></div></div>
+      </div>
+      <div class="tc-inspector-panel" data-inspector-panel="retrieval" hidden>
+        <div class="tc-panel-caption"><span>Retrieved evidence</span><b>3 approved + 1 fixture</b></div>
+        <div class="tc-retrieved-sources" id="retrieved-sources"></div>
+        <div class="tc-policy-note"><i data-lucide="badge-check"></i><div><b>Grounding 97.1%</b><span>All answer claims remain linked to approved billing evidence.</span></div></div>
+      </div>
+      <div class="tc-inspector-panel" data-inspector-panel="tools" hidden>
+        <div class="tc-panel-caption"><span>Tool permissions</span><b>2 enabled</b></div>
+        <div class="tool-permissions" id="tool-permissions"></div>
+        <div class="tc-policy-note is-warn"><i data-lucide="hand"></i><div><b>Human approval boundary</b><span>Refund, payment and customer-data writes remain approval gated.</span></div></div>
+      </div>
+      <div class="tc-inspector-panel" data-inspector-panel="context" hidden>
+        <div class="tc-panel-caption"><span>Context window</span><b>23.4K / 128K</b></div>
+        <div class="tc-context-track"><span style="width:18.3%"></span></div>
+        <div class="tc-context-breakdown"><div><span>Session</span><b>8.2K</b></div><div><span>Knowledge</span><b>11.6K</b></div><div><span>Cache</span><b>3.6K</b></div></div>
+        <div class="tc-context-budget"><div><span>Application scope budget</span><b>18.3%</b></div><p>Scope stays below the 128K application contract. Cache contributes 3.6K reusable tokens.</p></div>
+      </div>
+    </aside>
+  </div>
+</main>
+</div>
+<div aria-labelledby="command-title" aria-modal="true" class="fixed inset-0 z-[90] hidden items-start justify-center bg-black/55 px-3 pt-[8vh] backdrop-blur-md" id="command-modal" role="dialog">
+<div class="glass-panel w-full max-w-2xl overflow-hidden rounded-3xl">
+<div class="flex items-center gap-3 border-b px-4 py-3.5" style="border-color:var(--line)"><i class="size-[18px]" data-lucide="search" style="color:var(--muted)"></i><input autocomplete="off" class="min-w-0 flex-1 bg-transparent text-sm outline-none placeholder:text-slate-500" id="command-input" placeholder="Search pages, agents, models or ask AI..."/><span class="rounded-lg border px-2 py-1 text-[12px] font-bold" style="border-color:var(--line);color:var(--muted)">ESC</span></div>
+<div class="max-h-[62vh] overflow-y-auto p-2"><div class="px-3 pb-1 pt-2 text-[12px] font-bold uppercase tracking-[0.14em]" style="color:var(--muted)">Ask AI</div><button class="command-item flex w-full items-center gap-3 rounded-2xl px-3 py-3 text-left hover:bg-black/5 dark:hover:bg-white/5" data-search="ask ai analyze usage explain anomaly"><span class="flex size-9 items-center justify-center rounded-xl" style="background:linear-gradient(135deg,color-mix(in srgb,var(--primary) 18%,transparent),color-mix(in srgb,var(--cyan) 10%,transparent));color:var(--primary-text)"><i class="size-4" data-lucide="sparkles"></i></span><span class="min-w-0 flex-1"><span class="block text-xs font-bold">Ask AI about this workspace</span><span class="mt-0.5 block truncate text-[12px]" style="color:var(--muted)">Analyze usage, spend, quality, incidents, agents or knowledge.</span></span><span class="text-[12px]" style="color:var(--muted)">↵</span></button><div class="px-3 pb-1 pt-3 text-[12px] font-bold uppercase tracking-[0.14em]" style="color:var(--muted)">Navigate</div><a class="command-item flex items-center gap-3 rounded-2xl px-3 py-3 hover:bg-black/5 dark:hover:bg-white/5" data-search="admin test console application validation route model compare tools policy trace" href="test-console.html"><i class="size-4" data-lucide="message-square-text" style="color:var(--primary-text)"></i><span class="text-xs font-bold">Admin Test Console</span><span class="ml-auto text-[12px]" style="color:var(--muted)">⌘ J</span></a><a class="command-item flex items-center gap-3 rounded-2xl px-3 py-3 hover:bg-black/5 dark:hover:bg-white/5" data-search="evaluations quality regression datasets release safety" href="evaluations.html"><i class="size-4" data-lucide="clipboard-check" style="color:var(--mint-text)"></i><span class="text-xs font-bold">Evaluations</span></a><a class="command-item flex items-center gap-3 rounded-2xl px-3 py-3 hover:bg-black/5 dark:hover:bg-white/5" data-search="agents builder runs runtime approvals" href="agents.html"><i class="size-4" data-lucide="bot" style="color:var(--cyan-text)"></i><span class="text-xs font-bold">Agents &amp; Automations</span></a><button class="command-item flex w-full items-center gap-3 rounded-2xl px-3 py-3 text-left hover:bg-black/5 dark:hover:bg-white/5" data-search="knowledge rag documents embeddings retrieval"><i class="size-4" data-lucide="database" style="color:var(--mint-text)"></i><span class="text-xs font-bold">Knowledge &amp; RAG</span></button><button class="command-item flex w-full items-center gap-3 rounded-2xl px-3 py-3 text-left hover:bg-black/5 dark:hover:bg-white/5" data-search="models routing providers api"><i class="size-4" data-lucide="cpu" style="color:var(--amber-text)"></i><span class="text-xs font-bold">Models &amp; Providers</span></button><button class="command-item flex w-full items-center gap-3 rounded-2xl px-3 py-3 text-left hover:bg-black/5 dark:hover:bg-white/5" data-search="analytics finops cost tokens usage"><i class="size-4" data-lucide="chart-no-axes-combined" style="color:var(--danger-text)"></i><span class="text-xs font-bold">Usage Analytics</span></button><div class="hidden px-4 py-10 text-center" id="command-empty"><i class="mx-auto size-7" data-lucide="search-x" style="color:var(--muted)"></i><p class="mt-3 text-xs font-bold">No matching command</p><p class="mt-1 text-[12px]" style="color:var(--muted)">Try a different keyword or ask AI directly.</p></div></div>
+<div class="flex items-center gap-4 border-t px-4 py-2.5 text-[12px]" style="border-color:var(--line);color:var(--muted)"><span>↑↓ navigate</span><span>↵ select</span><span>esc close</span><span class="ml-auto">Orvexa Command Intelligence</span></div>
+</div>
+</div>
+<div aria-hidden="true" class="layout-settings-backdrop" id="layout-settings-backdrop"></div><aside aria-hidden="true" aria-labelledby="layout-settings-title" class="layout-settings-panel" id="layout-settings-panel" role="dialog"><div class="layout-settings-head"><div><h2 id="layout-settings-title">Layout settings</h2><p>Choose how the navigation looks and behaves.</p></div><button aria-label="Close layout settings" class="icon-button" id="layout-settings-close" type="button"><i data-lucide="x"></i></button></div><div class="layout-settings-body"><section class="layout-settings-section"><div class="layout-settings-section-head"><h3>Sidebar layout</h3><p>Use the compact icon rail or keep the full navigation visible.</p></div><div class="sidebar-layout-options"><button aria-pressed="true" class="sidebar-layout-option" data-sidebar-mode-option="icon" type="button"><span class="sidebar-layout-preview"><span class="rail"></span><span class="canvas"><span></span><span></span><span></span></span></span><span class="sidebar-layout-copy"><b>Icon + hover</b><small>Compact by default; expands on hover.</small></span></button><button aria-pressed="false" class="sidebar-layout-option" data-sidebar-mode-option="full" type="button"><span class="sidebar-layout-preview"><span class="rail"></span><span class="canvas"><span></span><span></span><span></span></span></span><span class="sidebar-layout-copy"><b>Full sidebar</b><small>Navigation stays open and content shifts right.</small></span></button></div><div class="layout-settings-note"><i data-lucide="mouse-pointer-click"></i><span>Menu groups open only when clicked. Hover expands the icon rail but does not open a submenu.</span></div></section><section class="layout-settings-section"><div class="layout-settings-section-head"><h3>Sidebar color</h3><p>Switch the navigation surface without changing page content.</p></div><div class="sidebar-tone-options"><button aria-pressed="true" class="sidebar-tone-option" data-sidebar-tone-option="pearl" type="button"><span class="sidebar-tone-swatch pearl"></span><span>Pearl</span></button><button aria-pressed="false" class="sidebar-tone-option" data-sidebar-tone-option="warm" type="button"><span class="sidebar-tone-swatch warm"></span><span>Warm</span></button><button aria-pressed="false" class="sidebar-tone-option" data-sidebar-tone-option="dark" type="button"><span class="sidebar-tone-swatch dark"></span><span>Dark</span></button></div></section></div><div class="layout-settings-footer"><button class="layout-reset-button" data-reset-layout-settings="" type="button"><i data-lucide="rotate-ccw"></i><span>Reset sidebar settings</span></button></div></aside>
+<div aria-hidden="true" class="compare-modal" id="compare-modal">
+<div aria-labelledby="compare-title" aria-modal="true" class="compare-shell" role="dialog">
+<div class="compare-top"><span class="compare-top-icon"><i data-lucide="columns-3"></i></span><div><h2 id="compare-title">Compare A vs B</h2><p>Same test case and evidence, different provider/model quality, latency and cost trade-offs.</p></div><button aria-label="Close comparison" class="icon-button" data-close-compare="" type="button"><i data-lucide="x"></i></button></div>
+<div class="compare-grid" id="compare-grid"></div>
+</div>
+</div>
+<aside aria-label="Deep research configuration" class="research-panel" id="research-panel">
+<div class="research-head"><span><i data-lucide="search-check"></i></span><div><h3>Deep RAG test</h3><p>Test retrieval depth, source provenance and citation behavior before release.</p></div><button aria-label="Close research panel" class="icon-button" id="close-research" type="button"><i data-lucide="x"></i></button></div>
+<div class="research-body">
+<div class="research-option"><span><i data-lucide="globe-2"></i></span><div><b>Approved external sources</b><small>Use only buyer-approved public sources and preserve provenance for evaluation.</small></div></div>
+<div class="research-option"><span><i data-lucide="database"></i></span><div><b>Application scope synthesis</b><small>Combine selected knowledge collections and inspect retrieval relevance.</small></div></div>
+<div class="research-option"><span><i data-lucide="list-tree"></i></span><div><b>RAG test plan</b><small>Run a structured evaluation, compare evidence and surface retrieval contradictions.</small></div></div>
+<button class="btn-primary" id="start-research" style="width:100%;margin-top:5px" type="button"><i data-lucide="play"></i>Start governed test run</button>
+</div>
+</aside>
+<div aria-live="polite" class="pointer-events-none fixed bottom-4 right-4 z-[120] flex w-[min(360px,calc(100vw-24px))] flex-col gap-2" id="toast-region"></div>
+<script src="../assets/vendor/lucide.min.js"></script>
+<script src="../assets/js/data/test-console-datae209.js?v=1.0.0"></script>
+<script src="../assets/js/components/test-console-componentse209.js?v=1.0.0"></script>
+<script src="../assets/js/data/navigation-data.js"></script>
+<script src="../assets/js/data/product-registry.js"></script>
+<script src="../assets/js/components/sidebar.js"></script>
+<script src="../assets/js/app.js"></script>
+<script src="../assets/js/test-consolee209.js?v=1.0.0"></script>
+<script src="../assets/js/data/page-registry.js"></script><script src="../assets/js/page-system.js"></script></body>
+
+</html>
